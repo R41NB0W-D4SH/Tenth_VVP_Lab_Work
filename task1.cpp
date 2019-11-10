@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-	setlocale (LC_ALL, "Russian");
+	setlocale (0, "");
 	float cost, i;
 
 	cout << "Введите цену за 1 кг конфет." << endl;
