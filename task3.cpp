@@ -13,7 +13,7 @@ int main()
 
     cout << "Сейчас сумма равна " << sum << endl;
 
-    for(int i = 1; i <= 2 * n - 1; i += 2) 
+    for(i = 1; i <= 2 * n - 1; i += 2) 
 	{
         sum = sum + i;
         cout << "Теперь сумма равна " << sum << endl;
