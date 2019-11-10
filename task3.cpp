@@ -11,16 +11,22 @@ int main()
     cout << "Введите число N" << endl;
     cin >> n;
 
-    cout << "Сейчас сумма равна " << sum << endl;
-
-    for(i = 1; i <= 2 * n - 1; i += 2) 
+	if (n > 0)
 	{
-        sum = sum + i;
-        cout << "Теперь сумма равна " << sum << endl;
-    }
+	    cout << "Сейчас сумма равна " << sum << endl;
+	    for(i = 1; i <= 2 * n - 1; i += 2) 
+		{
+		sum = sum + i;
+		cout << "Теперь сумма равна " << sum << endl;
+	    }
 
-    cout << "Квадрат N равен " << sum << endl;
-
+	    cout << "Квадрат N равен " << sum << endl;
+	}
+	else
+	{
+		cout << "Количество множителей должно быть больше нуля. Попробуйте еще раз." << endl;
+	}
+	
 	system("pause");
     return 0;
 }
