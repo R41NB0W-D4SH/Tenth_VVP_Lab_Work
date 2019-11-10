@@ -5,8 +5,8 @@ using namespace std;
 int main()
 {
 	setlocale(0, "");
-    int n, sum;
-
+    int i, n, sum;
+	
 	sum = 0;
     cout << "Введите число N" << endl;
     cin >> n;
@@ -15,7 +15,7 @@ int main()
 
     for(int i = 1; i <= 2 * n - 1; i += 2) 
 	{
-        sum += i;
+        sum = sum + i;
         cout << "Теперь сумма равна " << sum << endl;
     }
 
